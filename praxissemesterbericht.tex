@@ -1,0 +1,38 @@
+\documentclass[12pt]{report}
+\usepackage{graphicx}
+\graphicspath{{assets/}{assets/Screenshots/360-Feedback}}
+\usepackage[utf8]{inputenc}
+\usepackage{epstopdf}
+\usepackage[german]{babel}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{geometry}
+\usepackage{subfig}
+\usepackage{microtype}
+\usepackage[numbers]{natbib}
+\sloppy
+\usepackage{parskip}
+\usepackage[sfdefault]{inter}
+
+\title{Studienprojekt Bericht}
+\author{Malte Budig}
+\date{01.09.2023 bis 29.02.2024}
+
+\usepackage{titlesec}
+\titleformat{\chapter}[block]
+{\normalfont\huge\bfseries}{\thechapter}{1em}{\Huge}
+\titlespacing*{\chapter}{0pt}{-19pt}{0pt}
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\listoffigures
+	\include{chapters/introduction}
+	\include{chapters/grundlagen}
+	\include{chapters/konzept}
+	\include{chapters/umsetzung}
+	\include{chapters/evaluierung}
+	\include{chapters/zusammenfassung}
+	\appendix
+	\bibliographystyle{IEEEtranN}
+	\bibliography{bibliography.bib}
+\end{document}
